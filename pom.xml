@@ -92,6 +92,9 @@
     <profiles>
         <profile>
             <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
                 <jdbc.url><![CDATA[jdbc:mysql://localhost:3306/mobileskips?useSSL=false&amp;zeroDateTimeBehavior=convertToNull]]>
