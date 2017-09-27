@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-3.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+    <!-- For consider the using of annotations foe defining Spring Bean -->
+    <context:annotation-config/>
+
+    <!-- Reading properties from file -->
+    <context:property-placeholder order="1" location="classpath:application.properties" ignore-unresolvable="true"/>
+
+    <!-- Include datasource configuration -->
+    <import resource="datasource.xml"/>
+
+    <!-- Scan for spring annotated components -->
+    <context:component-scan base-package="com.higgsup.sample"/>
+
+
+</beans>
