@@ -97,7 +97,7 @@
             </activation>
             <properties>
                 <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-                <jdbc.url><![CDATA[jdbc:mysql://localhost:3306/mobileskips?useSSL=false&amp;zeroDateTimeBehavior=convertToNull]]>
+                <jdbc.url><![CDATA[jdbc:mysql://192.168.1.57:3306/mobileskips?useSSL=false&amp;zeroDateTimeBehavior=convertToNull]]>
                 </jdbc.url>
                 <jdbc.username>mobileskips</jdbc.username>
                 <jdbc.password>1e3q2wadS</jdbc.password>
@@ -109,7 +109,7 @@
             <id>production</id>
             <properties>
                 <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-                <jdbc.url><![CDATA[jdbc:mysql://localhost:3306/mobileskips?useSSL=false&amp;zeroDateTimeBehavior=convertToNull]]>
+                <jdbc.url><![CDATA[jdbc:mysql://192.168.1.57:3306/mobileskips?useSSL=false&amp;zeroDateTimeBehavior=convertToNull]]>
                 </jdbc.url>
                 <jdbc.username>mobileskips</jdbc.username>
                 <jdbc.password>1e3q2wadS</jdbc.password>
